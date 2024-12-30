@@ -1,0 +1,35 @@
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .nav-link i {
+    margin-right: 10px;
+  }
+  
+  .bg-light {
+    background-color: #f8f9fa !important;
+  }
+  
+  .badge {
+    font-size: 0.75rem;
+  }
+  
+  .collapsed {
+    width: 80px !important;
+  }
+  
+  .collapsed .nav-link span {
+    display: none;
+  }
+  
+  .collapsed .badge {
+    display: none;
+  }
+  
+  .collapsed .logo span {
+    display: none;
+  }
+  

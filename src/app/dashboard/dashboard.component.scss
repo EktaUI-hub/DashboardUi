@@ -1,0 +1,60 @@
+.container-fluid {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+  }
+  
+  .container-fluid.active {
+    margin-left: 0;
+  }
+  
+  .progress-bar {
+    transition: width 0.4s ease;
+  }
+  
+  .text-muted {
+    font-size: 0.85rem;
+  }
+  
+  h5 {
+    font-weight: bold;
+  }
+  
+  a.text-primary {
+    text-decoration: none;
+  }
+  
+  a.text-primary:hover {
+    text-decoration: underline;
+  }
+  
+
+  .text-muted {
+    font-size: 0.85rem;
+  }
+  
+  h5 {
+    font-weight: bold;
+  }
+  
+  .badge {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .progress-bar {
+    transition: width 0.4s ease;
+  }
+  
+  .btn-link {
+    font-size: 0.9rem;
+  }
+  
+  i.bi-bell {
+    font-size: 1.2rem;
+  }
+  
+  i.bi-plus {
+    font-size: 0.75rem;
+  }
+  

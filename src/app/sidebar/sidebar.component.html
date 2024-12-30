@@ -1,0 +1,61 @@
+<div class="d-flex flex-column vh-100 bg-light" [class.collapsed]="isCollapsed" style="transition: width 0.3s; width: 250px;">
+  
+    <div class="mb-4 d-flex align-items-center">
+      <img
+        src="assets/logo.jpg"
+        alt="Logo"
+        style="width: 60px; cursor: pointer;"
+        (click)="toggleSidebar()"
+      />
+      <span class="fw-bold ms-2" *ngIf="!isCollapsed">Logo</span>
+    </div>
+  
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link active text-start">
+          <i class="bi bi-grid"></i> <span *ngIf="!isCollapsed">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-start">
+          <i class="bi bi-folder"></i> <span *ngIf="!isCollapsed">Classes</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-start">
+          <i class="bi bi-collection"></i> <span *ngIf="!isCollapsed">Resources</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-start">
+          <i class="bi bi-calendar-event"></i> <span *ngIf="!isCollapsed">Learning Plan</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-start">
+          <i class="bi bi-chat-dots"></i> <span *ngIf="!isCollapsed">Chat</span>
+          <span class="badge bg-danger ms-2" *ngIf="!isCollapsed">4</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-start">
+          <i class="bi bi-gear"></i> <span *ngIf="!isCollapsed">Settings</span>
+        </a>
+      </li>
+    </ul>
+  
+    <div class="mt-auto p-3 bg-white rounded shadow-sm text-center" *ngIf="!isCollapsed">
+      <img
+        src="assets/logo.jpg"
+        alt="Upgrade"
+        class="mb-2"
+        style="width: 50px;"
+      />
+      <p class="small">
+        Upgrade to <span class="fw-bold text-primary">PRO</span> for more
+        resources.
+      </p>
+      <button class="btn btn-primary btn-sm">Upgrade</button>
+    </div>
+  </div>
+  
